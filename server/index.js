@@ -11,7 +11,10 @@ const cart_controller=require('./controllers/cart_controller');
 const app =express();
 
 app.use(bodyParser.json());
+
+// here, create middleware that use body-parser and session
 app.use(session({
+    // pass in the configuration object into session
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized:true

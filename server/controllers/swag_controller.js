@@ -1,6 +1,5 @@
 const swag=require('../models/swag');
 
-
 // Export an object with a read method that has a req, res, and next parameter.
 // The read method should use res to send a status of 200 with the swag array.
 
